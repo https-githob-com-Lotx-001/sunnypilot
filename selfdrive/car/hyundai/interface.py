@@ -190,6 +190,11 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.9
       ret.steerRatio = 16.
       tire_stiffness_factor = 0.65
+    elif candidate == CAR.KIA_K7:
+      ret.mass = 1980 + STD_CARGO_KG
+      ret.wheelbase = 2.855
+      ret.steerRatio = 14.4 * 2.71
+      tire_stiffness_factor = 0.7 
     elif candidate in (CAR.IONIQ_5, CAR.IONIQ_6):
       ret.mass = 1948 + STD_CARGO_KG
       ret.wheelbase = 2.97
